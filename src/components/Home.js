@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Resume from './../assets/LindaCV.pdf'
+import Resume from './../assets/LindaFranco-Resume.pdf'
 import theme from './../theme'
 import portfolio from './../assets/img/Portfolio-img.svg'
 import Social from './Social'
@@ -13,7 +13,7 @@ const Home = () => {
                     <Title3>Hello, my name is</Title3>
                     <Title1>Linda Franco</Title1>
                     <Title2>And I'm a Front-End Developer</Title2>
-                    <a href={Resume} download="LindaCV">
+                    <a href={Resume} download="Linda - Resume">
                         Download Resume
                     </a>
                     <Social prop="start" />

@@ -6,7 +6,6 @@
 - [Continued development](#continued-development)
 - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -29,5 +28,5 @@ Here are frontend challenges to learn more and improve knowledge of technologies
 
 ## Author
 
-- Website - [Linda Franco](https://www.your-site.com)
+- Website - [Linda Franco](https://lindafranco.netlify.app/)
 - Frontend Mentor - [@LindaHyuk](https://www.frontendmentor.io/profile/LindaHyuk)
