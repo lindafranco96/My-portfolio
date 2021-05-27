@@ -13,9 +13,9 @@ const Footer = () => {
 
 const FooterContainer = styled.footer`
     background-color: ${theme.clrCoffee2};
-    height: 5rem;
+    height: max-content;
     width: 100%;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
 `
 

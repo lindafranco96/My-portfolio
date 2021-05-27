@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import theme from './../theme'
+import frontend from './../assets/img/FrontendMentor.png'
 
 const Social = (props) => {
     const prop = props.prop;
@@ -23,6 +24,11 @@ const Social = (props) => {
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
             </SocialButton>
+            <SocialButton white prop={prop}>
+                <a href="https://www.frontendmentor.io/profile/LindaHyuk" target="_blank">
+                    <img src={frontend} alt="Frontend Mentor" />
+                </a>
+            </SocialButton>
         </SocialContainer>
     );
 }
@@ -32,6 +38,7 @@ const SocialContainer = styled.div`
     align-items: center;
     text-align: center;
     justify-content: ${props => props.prop === 'start' ? 'flex-start' : 'center'};
+    flex-wrap: wrap;
     height: 5rem;
     width: 100%;
 
@@ -52,23 +59,28 @@ const SocialButton = styled.div`
     transition: all .3s ease;
     background-color: #f2f2f2;
 
-    a{
+    a {
         color: #912f56;
     }
 
     &:hover {
-        background-color: ${theme.clrPinkDark};
         transform: scale(1.1);
+        background-color: ${(props) => props.white ? theme.clrWhiteDark : theme.clrPinkDark};
+        box-shadow: 0 0 5px 5px ${theme.clrGrey5};
     }
 
     &:hover a {
         color: ${theme.clrWhiteDark};
-
     }
 
     &:focus {
         outline: none;
         border: none;
+    }
+
+    img {
+        width: 1.5rem;
+        margin-top: .5rem;
     }
 
     @media screen and (max-width: 970px) {
